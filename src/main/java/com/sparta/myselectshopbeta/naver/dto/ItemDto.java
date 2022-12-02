@@ -13,6 +13,7 @@ public class ItemDto {
     private int lprice;
 
     public ItemDto(JSONObject itemJson) {
+        //json 안에 있는 Key값을 담아준다
         this.title = itemJson.getString("title");
         this.link = itemJson.getString("link");
         this.image = itemJson.getString("image");
